@@ -1,0 +1,42 @@
+# RSS Feeds - Most reliable for announcements
+rss_feeds:
+  aws:
+    - url: "https://aws.amazon.com/blogs/training-and-certification/feed/"
+      name: "AWS Training & Certification Blog"
+      keywords: ["exam", "certification", "update", "retiring", "launching", "new version", "SAA", "DVA", "SOA", "CLF", "DOP", "SAP", "ANS", "SCS", "DAS", "MLS"]
+  
+  azure:
+    - url: "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog/feeds/blogposts"
+      name: "Microsoft Learn Blog"
+      keywords: ["exam", "certification", "retire", "update", "AZ-", "AI-", "DP-", "SC-", "MS-", "PL-", "MB-"]
+  
+  kubernetes:
+    - url: "https://www.cncf.io/feed/"
+      name: "CNCF Blog"
+      keywords: ["CKA", "CKAD", "CKS", "exam", "certification", "update"]
+    
+    - url: "https://training.linuxfoundation.org/feed/"
+      name: "Linux Foundation Training"
+      keywords: ["kubernetes", "certification", "exam update", "CKA", "CKAD", "CKS"]
+
+  google_cloud:
+    - url: "https://cloud.google.com/blog/topics/training-certifications/rss"
+      name: "Google Cloud Training & Certifications"
+      keywords: ["certification", "exam", "update", "retiring", "Professional", "Associate"]
+
+  devops:
+    - url: "https://www.hashicorp.com/blog/feed"
+      name: "HashiCorp Blog"
+      keywords: ["certification", "terraform", "vault", "consul", "exam"]
+
+# Specific announcement pages to monitor
+announcement_pages:
+  aws:
+    - url: "https://aws.amazon.com/certification/coming-soon/"
+      name: "AWS Upcoming Certification Changes"
+      check_for: ["New", "Retiring", "Updated", "Launch"]
+  
+  azure:
+    - url: "https://learn.microsoft.com/en-us/certifications/"
+      name: "Microsoft Certification Updates"
+      check_for: ["retiring", "updated", "new exam"]
