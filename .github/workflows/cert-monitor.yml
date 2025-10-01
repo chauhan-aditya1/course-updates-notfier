@@ -1,0 +1,45 @@
+name: Certification Monitor
+
+on:
+  # Schedule to run every Monday at 9 AM UTC
+  schedule:
+    - cron: '0 9 * * 1'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: 📦 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: 🔍 Run certification monitor
+        env:
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          python main.py
+      
+      - name: 📊 Upload logs (if any errors)
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: monitor-logs
+          path: |
+            *.log
+          retention-days: 30
+          if-no-files-found: ignore
