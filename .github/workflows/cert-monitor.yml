@@ -34,9 +34,9 @@ jobs:
         run: |
           python main.py
       
-      - name: 📊 Upload logs (if any errors)
+      - name: 📊 Upload logs (if any)
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: monitor-logs
           path: |
