@@ -1,223 +1,46 @@
-# RSS Feeds - Only specific exam announcements
+# RSS Feeds - Most reliable for announcements
 rss_feeds:
   aws:
     - url: "https://aws.amazon.com/blogs/training-and-certification/feed/"
       name: "AWS Training & Certification Blog"
-      keywords:
-        # ONLY specific exam action keywords - no generic terms
-        - "retiring on"
-        - "available on"
-        - "launching on"
-        - "exam retiring"
-        - "beta exam"
-        - "new exam version"
-        - "exam update for"
-        - "exam changes for"
-        - "new name for"
-        - "renamed to"
-        - "replacement for"
-        # Specific cert codes with hyphen (more specific)
-        - "CLF-C02"
-        - "CLF-C03"
-        - "SAA-C03"
-        - "SAA-C04"
-        - "DVA-C02"
-        - "DVA-C03"
-        - "SOA-C02"
-        - "SOA-C03"
-        - "DOP-C02"
-        - "DOP-C03"
-        - "SAP-C02"
-        - "ANS-C01"
-        - "SCS-C02"
-        - "DAS-C01"
-        - "MLS-C01"
-        - "PAS-C01"
-        - "MLA-C01"
-        - "AIF-C01"
-        # Specific phrases
-        - "certification exam"
-        - "operations certification"
-        - "solutions architect exam"
-        - "developer associate exam"
-        - "sysops administrator exam"
+      keywords: ["exam", "certification", "update", "retiring", "launching", "new version"]
   
   azure:
     - url: "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog/feeds/blogposts"
       name: "Microsoft Learn Blog"
-      keywords:
-        # Only specific exam actions
-        - "exam is retiring"
-        - "exam will retire"
-        - "retirement date"
-        - "exam update"
-        - "new exam"
-        - "exam version"
-        - "beta exam"
-        - "exam changes"
-        - "objectives updated"
-        - "skills measured"
-        # Specific Azure codes
-        - "AZ-104 exam"
-        - "AZ-204 exam"
-        - "AZ-305 exam"
-        - "AZ-400 exam"
-        - "AZ-500 exam"
-        - "AZ-700 exam"
-        - "AZ-900 exam"
-        - "AI-102 exam"
-        - "AI-900 exam"
-        - "DP-203 exam"
-        - "DP-300 exam"
-        - "DP-420 exam"
-        - "DP-900 exam"
-        - "SC-100 exam"
-        - "SC-200 exam"
-        - "SC-300 exam"
-        - "SC-400 exam"
-        - "SC-900 exam"
-        - "MS-102 exam"
-        - "PL-100 exam"
-        - "PL-200 exam"
-        - "PL-300 exam"
-        - "PL-400 exam"
+      keywords: ["exam", "certification", "retire", "update", "AZ-", "AI-", "DP-", "SC-"]
     
     - url: "https://learn.microsoft.com/api/search/rss?locale=en-us&%24filter=scopes%2Fany(t%3A%20t%20eq%20%27Certifications%27)"
       name: "Microsoft Learn Certifications"
-      keywords:
-        - "exam retiring"
-        - "retirement"
-        - "new exam"
-        - "exam update"
-        - "beta exam"
-  
+      keywords: ["updated", "retirement", "new exam"]
+
   kubernetes:
     - url: "https://www.cncf.io/feed/"
       name: "CNCF Blog"
-      keywords:
-        - "CKA exam update"
-        - "CKAD exam update"
-        - "CKS exam update"
-        - "KCNA exam"
-        - "KCSA exam"
-        - "certification exam"
-        - "exam changes"
-        - "kubernetes version"
+      keywords: ["CKA", "CKAD", "CKS", "exam", "certification", "update"]
     
     - url: "https://training.linuxfoundation.org/feed/"
       name: "Linux Foundation Training"
-      keywords:
-        - "CKA exam"
-        - "CKAD exam"
-        - "CKS exam"
-        - "KCNA exam"
-        - "KCSA exam"
-        - "LFCS exam"
-        - "exam update"
-        - "certification update"
-        - "exam changes"
-        - "PCA exam"
-        - "Prometheus exam"
-        - "ICA exam"
-        - "Istio exam"
-        - "CCA exam"
-        - "Cilium exam"
-        - "OTCA exam"
-        - "OpenTelemetry exam"
-        - "KCA exam"
-        - "Kyverno exam"
-        - "CAPA exam"
-        - "Argo exam"
-        - "CGOA exam"
-        - "GitOps exam"
-        - "CBA exam"
-        - "Backstage exam"
+      keywords: ["kubernetes", "certification", "exam update"]
 
   google_cloud:
     - url: "https://cloud.google.com/blog/topics/training-certifications/rss"
-      name: "Google Cloud Certifications"
-      keywords:
-        - "certification exam"
-        - "exam update"
-        - "exam retiring"
-        - "new exam"
-        - "Cloud Digital Leader exam"
-        - "Professional Cloud"
-        - "Associate Cloud"
+      name: "Google Cloud Training & Certifications"
+      keywords: ["certification", "exam", "update", "retiring"]
 
-  hashicorp:
-    - url: "https://www.hashicorp.com/blog/feed"
-      name: "HashiCorp Blog"
-      keywords:
-        - "Terraform certification"
-        - "Terraform exam"
-        - "Vault certification"
-        - "Vault exam"
-        - "Consul certification"
-        - "Consul exam"
-        - "certification update"
-        - "exam update"
-
-  comptia:
-    - url: "https://www.comptia.org/blog/feed"
-      name: "CompTIA Blog"
-      keywords:
-        - "Security+ exam"
-        - "SY0-701"
-        - "SY0-601"
-        - "certification retiring"
-        - "new exam version"
-        - "exam update"
-
-  docker:
-    - url: "https://www.docker.com/blog/feed/"
-      name: "Docker Blog"
-      keywords:
-        - "Docker Certified Associate"
-        - "DCA exam"
-        - "certification exam"
-
-  lpi:
-    - url: "https://www.lpi.org/blog/feed"
-      name: "Linux Professional Institute"
-      keywords:
-        - "LPIC-1 exam"
-        - "LPIC-2 exam"
-        - "101-500"
-        - "102-500"
-        - "exam update"
-
-  finops:
-    - url: "https://www.finops.org/feed/"
-      name: "FinOps Foundation"
-      keywords:
-        - "FinOps Certified Practitioner"
-        - "certification exam"
-        - "exam update"
-
-  github:
-    - url: "https://github.blog/feed/"
-      name: "GitHub Blog"
-      keywords:
-        - "GitHub Actions certification"
-        - "GitHub Copilot certification"
-        - "certification exam"
-
-# Announcement pages - specific update pages only
+# Specific announcement pages to monitor
 announcement_pages:
   aws:
     - url: "https://aws.amazon.com/certification/coming-soon/"
-      name: "AWS Certification Updates"
-      check_for:
-        - "Retiring"
-        - "Launching"
-        - "Available"
-        - "Beta"
+      name: "AWS Upcoming Certification Changes"
+      check_for: ["New", "Retiring", "Updated"]
   
   azure:
-    - url: "https://learn.microsoft.com/en-us/certifications/"
-      name: "Microsoft Certifications"
-      check_for:
-        - "retiring"
-        - "updated"
-        - "new exam"
+    - url: "https://learn.microsoft.com/en-us/certifications/posts/"
+      name: "Microsoft Certification Updates"
+      check_for: ["retiring", "updated", "new exam"]
+  
+  kubernetes:
+    - url: "https://training.linuxfoundation.org/blog/"
+      name: "Linux Foundation Training Blog"
+      check_for: ["CKA", "CKAD", "CKS", "update"]
