@@ -24,6 +24,6 @@ lookback_days: 90
 
 # Filtering
 filters:
-  min_relevance: 60
+  min_relevance: 80
   exclude_keywords: []
   include_certs: []  # Leave empty to monitor all certs
