@@ -20,7 +20,7 @@ notification:
     webhook_url: ""
 
 # How far back to check for updates (in days)
-lookback_days: 7
+lookback_days: 30
 
 # Filtering
 filters:
@@ -28,11 +28,9 @@ filters:
   exclude_keywords:
     # Generic post patterns
     - "find out about"
-    - "upcoming exam updates"
     - "check out our latest"
     - "new courses and certification"
     - "training releases in"
-    - "certification updates in"
     - "latest training"
     - "what's new in"
     - "monthly updates"
