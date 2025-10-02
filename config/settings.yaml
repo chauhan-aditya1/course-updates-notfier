@@ -26,8 +26,18 @@ lookback_days: 7
 filters:
   min_relevance: 75  # Increased from 60 - only high-quality matches  
   exclude_keywords:
+    # Generic post patterns
     - "find out about"
-    - "check out"
+    - "upcoming exam updates"
+    - "check out our latest"
+    - "new courses and certification"
+    - "training releases in"
+    - "certification updates in"
+    - "latest training"
+    - "what's new in"
+    - "monthly updates"
+    - "this month"
+    # Non-exam content
     - "meet"
     - "interview"
     - "profile"
@@ -38,10 +48,8 @@ filters:
     - "event"
     - "promotion"
     - "discount"
-    - "new courses and"
-    - "training releases"
-    - "latest training"
-    - "upcoming exam updates"  # This is the generic one!
-    - "what's new in"
-    - "monthly round-up"
+    - "sale"
+    - "skill builder"
+    - "digital training products"
+    - "aws jam"
   include_certs: []  # Leave empty to monitor all certs
