@@ -6,11 +6,11 @@ notification:
     from_email: "aditya@kodekloud.com"  # ⚠️ CHANGE THIS TO YOUR EMAIL
     to_emails:
       - "aditya@kodekloud.com"  
-      - "gordon@kodekloud.com" 
-      - "shafaq@kodekloud.com" 
-      - "aakash@kodekloud.com" 
-      - "michael@kodekloud.com" 
-      - "mmumshad@kodekloud.com" 
+ #     - "gordon@kodekloud.com" 
+  #    - "shafaq@kodekloud.com" 
+   #   - "aakash@kodekloud.com" 
+    #  - "michael@kodekloud.com" 
+     # - "mmumshad@kodekloud.com" 
   slack:
     enabled: false  # Set to true if you want Slack notifications
     webhook_url: ""  # Will be set via environment variable
