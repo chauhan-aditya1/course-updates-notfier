@@ -21,7 +21,7 @@ rss_feeds:
     
     - url: "https://training.linuxfoundation.org/feed/"
       name: "Linux Foundation Training"
-       keywords:
+      keywords:
         - "CKA"
         - "CKA exam"
         - "CKAD"
