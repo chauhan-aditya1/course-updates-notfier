@@ -1,42 +1,291 @@
-# RSS Feeds - Most reliable for announcements
+# RSS Feeds - Comprehensive coverage for all certifications
 rss_feeds:
   aws:
     - url: "https://aws.amazon.com/blogs/training-and-certification/feed/"
       name: "AWS Training & Certification Blog"
-      keywords: ["exam", "certification", "update", "retiring", "launching", "new version", "SAA", "DVA", "SOA", "CLF", "DOP", "SAP", "ANS", "SCS", "DAS", "MLS"]
+      keywords:
+        # Exam-specific keywords
+        - "retiring"
+        - "new version"
+        - "exam update"
+        - "launching"
+        - "available now"
+        - "registration open"
+        - "beta exam"
+        - "exam changes"
+        - "updated exam"
+        # AWS Certifications you have
+        - "CLF-C02"
+        - "CLF-C03"
+        - "Cloud Practitioner"
+        - "SAA-C03"
+        - "SAA-C04"
+        - "Solutions Architect Associate"
+        - "DVA-C02"
+        - "DVA-C03"
+        - "Developer Associate"
+        - "SOA-C02"
+        - "SOA-C03"
+        - "SysOps Administrator"
+        - "DOP-C02"
+        - "DOP-C03"
+        - "DevOps Engineer Professional"
+        - "MLA-C01"
+        - "Machine Learning Associate"
+        - "AI Practitioner"
+        - "AIF-C01"
   
   azure:
     - url: "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog/feeds/blogposts"
       name: "Microsoft Learn Blog"
-      keywords: ["exam", "certification", "retire", "update", "AZ-", "AI-", "DP-", "SC-", "MS-", "PL-", "MB-"]
+      keywords:
+        - "exam retiring"
+        - "exam update"
+        - "new exam"
+        - "beta exam"
+        - "exam changes"
+        - "retiring on"
+        - "updated exam"
+        # Azure certifications you have
+        - "AZ-104"
+        - "Azure Administrator"
+        - "AZ-204"
+        - "Developing Solutions"
+        - "AZ-305"
+        - "Azure Solutions Architect"
+        - "AZ-400"
+        - "DevOps Solutions"
+        - "AZ-500"
+        - "Azure Security"
+        - "AZ-700"
+        - "Azure Network Engineer"
+        - "AZ-900"
+        - "Azure Fundamentals"
+        - "DP-900"
+        - "Azure Data Fundamentals"
+        - "AI-900"
+        - "Azure AI Fundamentals"
+        - "AI-102"
+        - "Azure AI Engineer"
+    
+    - url: "https://learn.microsoft.com/api/search/rss?locale=en-us&%24filter=scopes%2Fany(t%3A%20t%20eq%20%27Certifications%27)"
+      name: "Microsoft Learn Certifications"
+      keywords:
+        - "exam retiring"
+        - "exam update"
+        - "AZ-104"
+        - "AZ-204"
+        - "AZ-305"
+        - "AZ-400"
+        - "AZ-500"
+        - "AZ-700"
+        - "AZ-900"
+        - "DP-900"
+        - "AI-900"
+        - "AI-102"
   
   kubernetes:
     - url: "https://www.cncf.io/feed/"
       name: "CNCF Blog"
-      keywords: ["CKA", "CKAD", "CKS", "exam", "certification", "update"]
+      keywords:
+        - "CKA"
+        - "Certified Kubernetes Administrator"
+        - "CKAD"
+        - "Kubernetes Application Developer"
+        - "CKS"
+        - "Kubernetes Security Specialist"
+        - "KCNA"
+        - "Cloud-Native Associate"
+        - "KCSA"
+        - "Cloud Native Security Associate"
+        - "exam update"
+        - "certification update"
+        - "exam changes"
     
     - url: "https://training.linuxfoundation.org/feed/"
       name: "Linux Foundation Training"
-      keywords: ["kubernetes", "certification", "exam update", "CKA", "CKAD", "CKS"]
+      keywords:
+        - "CKA"
+        - "CKAD"
+        - "CKS"
+        - "KCNA"
+        - "KCSA"
+        - "LFCS"
+        - "Linux Foundation Certified System Administrator"
+        - "exam update"
+        - "certification update"
+        - "PCA"
+        - "Prometheus Certified Associate"
+        - "ICA"
+        - "Istio Certified Associate"
+        - "CCA"
+        - "Cilium Certified Associate"
+        - "OTCA"
+        - "OpenTelemetry Certified Associate"
+        - "KCA"
+        - "Kyverno Certified Associate"
+        - "CNPA"
+        - "Cloud Native Platform Engineering"
+        - "CAPA"
+        - "Certified Argo Project Associate"
+        - "CGOA"
+        - "GitOps Certified Associate"
+        - "CBA"
+        - "Certified Backstage Associate"
 
   google_cloud:
     - url: "https://cloud.google.com/blog/topics/training-certifications/rss"
       name: "Google Cloud Training & Certifications"
-      keywords: ["certification", "exam", "update", "retiring", "Professional", "Associate"]
+      keywords:
+        - "Cloud Digital Leader"
+        - "exam update"
+        - "certification update"
+        - "exam retiring"
+        - "new exam"
 
-  devops:
+  hashicorp:
     - url: "https://www.hashicorp.com/blog/feed"
       name: "HashiCorp Blog"
-      keywords: ["certification", "terraform", "vault", "consul", "exam"]
+      keywords:
+        - "Terraform Associate"
+        - "Terraform certification"
+        - "Vault Associate"
+        - "Vault Operations Professional"
+        - "Consul Associate"
+        - "certification update"
+        - "exam update"
+        - "exam changes"
 
-# Specific announcement pages to monitor
+  docker:
+    - url: "https://www.docker.com/blog/feed/"
+      name: "Docker Blog"
+      keywords:
+        - "Docker Certified Associate"
+        - "DCA"
+        - "certification"
+        - "exam update"
+
+  python:
+    - url: "https://www.python.org/blogs/feed/"
+      name: "Python Blog"
+      keywords:
+        - "PCAP"
+        - "Python Certification"
+        - "certification"
+
+  comptia:
+    - url: "https://www.comptia.org/blog/feed"
+      name: "CompTIA Blog"
+      keywords:
+        - "Security+"
+        - "Security Plus"
+        - "SY0-701"
+        - "SY0-601"
+        - "exam update"
+        - "retiring"
+        - "new version"
+
+  lpi:
+    - url: "https://www.lpi.org/blog/feed"
+      name: "Linux Professional Institute"
+      keywords:
+        - "LPIC-1"
+        - "LPIC-2"
+        - "101-500"
+        - "102-500"
+        - "exam update"
+        - "certification update"
+
+  finops:
+    - url: "https://www.finops.org/feed/"
+      name: "FinOps Foundation"
+      keywords:
+        - "FinOps Certified Practitioner"
+        - "certification"
+        - "exam update"
+
+  github:
+    - url: "https://github.blog/feed/"
+      name: "GitHub Blog"
+      keywords:
+        - "GitHub Actions Certification"
+        - "GitHub Copilot Certification"
+        - "GitHub certification"
+        - "exam"
+
+  jenkins:
+    - url: "https://www.jenkins.io/node/feed.xml"
+      name: "Jenkins Blog"
+      keywords:
+        - "Certified Jenkins Engineer"
+        - "CJE"
+        - "certification"
+        - "exam"
+
+  nvidia:
+    - url: "https://blogs.nvidia.com/feed/"
+      name: "NVIDIA Blog"
+      keywords:
+        - "Gen AI Certification"
+        - "NVIDIA certification"
+        - "AI certification"
+
+  devops_general:
+    - url: "https://www.cncf.io/blog/feed/"
+      name: "CNCF General Blog"
+      keywords:
+        - "certification"
+        - "exam update"
+        - "Prometheus"
+        - "Istio"
+        - "Cilium"
+        - "OpenTelemetry"
+        - "Kyverno"
+        - "Argo"
+        - "GitOps"
+        - "Backstage"
+
+# Announcement pages
 announcement_pages:
   aws:
     - url: "https://aws.amazon.com/certification/coming-soon/"
-      name: "AWS Upcoming Certification Changes"
-      check_for: ["New", "Retiring", "Updated", "Launch"]
+      name: "AWS Certification Updates"
+      check_for:
+        - "Retiring"
+        - "Launching"
+        - "Available"
+        - "Beta"
+        - "CLF-C02"
+        - "SAA-C03"
+        - "DVA-C02"
+        - "SOA-C02"
+        - "DOP-C02"
   
   azure:
     - url: "https://learn.microsoft.com/en-us/certifications/"
-      name: "Microsoft Certification Updates"
-      check_for: ["retiring", "updated", "new exam"]
+      name: "Microsoft Certifications"
+      check_for:
+        - "retiring"
+        - "updated"
+        - "AZ-104"
+        - "AZ-204"
+        - "AZ-305"
+        - "AZ-400"
+        - "AZ-500"
+        - "AZ-700"
+        - "AZ-900"
+        - "DP-900"
+        - "AI-900"
+        - "AI-102"
+  
+  linux_foundation:
+    - url: "https://training.linuxfoundation.org/certification/"
+      name: "Linux Foundation Certifications"
+      check_for:
+        - "CKA"
+        - "CKAD"
+        - "CKS"
+        - "KCNA"
+        - "KCSA"
+        - "LFCS"
+        - "update"
