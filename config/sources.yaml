@@ -17,7 +17,7 @@ rss_feeds:
   kubernetes:
     - url: "https://www.cncf.io/feed/"
       name: "CNCF Blog"
-      keywords: ["CKA", "CKAD", "CKS", "exam", "certification", "update"]
+      keywords: ["CKA", "CKAD", "CKS", "KCNA", "KCSA", "ICA", "Istio Certified Associate" "exam", "certification", "update"]
     
     - url: "https://training.linuxfoundation.org/feed/"
       name: "Linux Foundation Training"
