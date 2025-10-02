@@ -24,6 +24,24 @@ lookback_days: 7
 
 # Filtering
 filters:
-  min_relevance: 60
-  exclude_keywords: []
+  min_relevance: 75  # Increased from 60 - only high-quality matches  
+  exclude_keywords:
+    - "find out about"
+    - "check out"
+    - "meet"
+    - "interview"
+    - "profile"
+    - "story"
+    - "journey"
+    - "career"
+    - "webinar"
+    - "event"
+    - "promotion"
+    - "discount"
+    - "new courses and"
+    - "training releases"
+    - "latest training"
+    - "upcoming exam updates"  # This is the generic one!
+    - "what's new in"
+    - "monthly round-up"
   include_certs: []  # Leave empty to monitor all certs
