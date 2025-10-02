@@ -20,7 +20,7 @@ notification:
     webhook_url: ""
 
 # How far back to check for updates (in days)
-lookback_days: 180
+lookback_days: 7
 
 # Filtering
 filters:
