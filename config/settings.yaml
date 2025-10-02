@@ -20,10 +20,10 @@ notification:
     webhook_url: ""
 
 # How far back to check for updates (in days)
-lookback_days: 90
+lookback_days: 30
 
 # Filtering
 filters:
-  min_relevance: 80
+  min_relevance: 60
   exclude_keywords: []
   include_certs: []  # Leave empty to monitor all certs
